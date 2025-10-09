@@ -13,7 +13,9 @@ order by price desc;
 SELECT * FROM customers
 WHERE city = 'Lihue';
 -- Q3) Return the first 5 orders by earliest order_datetime (order_id, order_datetime).
-
+SELECT order_id, order_datetime FROM orders
+ORDER BY order_datetime ASC
+LIMIT 5;
 -- Q4) Find all products with the word 'Latte' in the name.
 
 -- Q5) Show distinct payment methods used in the dataset.
